@@ -11,8 +11,8 @@ class Program
 
         try
         {
-           string command = $"sc delete {serviceName}";
-           ProcessStartInfo startInfo = new ProcessStartInfo
+            string command = $"sc delete {serviceName}";
+            ProcessStartInfo startInfo = new ProcessStartInfo
             {
                 FileName = "cmd.exe",
                 Arguments = $"/c {command}",
@@ -22,7 +22,7 @@ class Program
              Process process = Process.Start(startInfo);
              process.WaitForExit();
            
-            File.Delete(driverPath);
+             File.Delete(driverPath);
          }
         catch {} 
     }
