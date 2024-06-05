@@ -24,6 +24,5 @@ class Program
            
             File.Delete(driverPath);
          }
-      }
-      catch {}
-} 
+        catch {} 
+    }
